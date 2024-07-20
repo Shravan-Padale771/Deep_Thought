@@ -1,0 +1,242 @@
+<%- include("partials/header.ejs")%>
+<header class="header_container">
+
+    <div class="header_slider" id="header_slider">
+      <div class="head_top">
+          <h2 id="head_h2">Journey Board</h2>
+          <div>
+          <button id="a_btn" type="button"> 
+              <span id="arrow" class="material-symbols-outlined">arrow_forward</span>
+          </button>
+          </div>
+      </div>
+      <div class="main-side" id="main-side">
+        <div>
+          <h1>1</h1>
+        </div>
+      </div>
+
+      <div class="head_bottom">
+        
+          <ol>
+              <li><%=data.tasks[0].assets[0].asset_title%></li>
+              <li><%=data.tasks[0].assets[1].asset_title%></li>
+              <li><%=data.tasks[0].assets[2].asset_title%></li>
+              <li><%=data.tasks[0].assets[3].asset_title%></li>
+              
+          </ol>
+
+
+      </div>
+  </div>
+
+  <div class="notify">
+    <div class="showleft"><h3>X</h3><p> N o t i c e  B o a r d</p>
+   </div>
+    <div class="showright"></div>
+</div>
+
+
+      <div class="header_body">
+
+          <div class="header_text"><h1>Technical Project Manager</h1></div>
+
+          <div><button class="header_button">Submit Task</button></div>
+
+      </div>
+  </header>
+
+ 
+  <main class="main-container">
+   
+    <div class="main-body">
+          <div class="main-body-paragraph">
+              <h1><%= data.tasks[0].task_title%></h1>
+              <p>
+                <%= data.tasks[0].task_description%>
+              </p>
+          </div>
+
+          <div class="main-body-card">
+          <div class="main-body-card-one">
+              <div class="main-body-card-one-top">
+              <p> <%= data.tasks[0].assets[0].asset_title%></p>
+              
+              <span class="material-symbols-outlined"> info</span>
+              
+              </div>
+              <div class="main-body-card-one-middle">
+              <div>
+                  <p>
+                  <b>Description:</b><%=data.tasks[0].assets[0].asset_description  %>
+                  </p>
+              </div>
+              </div>
+              <div class="main-body-card-one-bottom">
+                <iframe width="100%" height="335" src="https://www.youtube.com/embed/GkDup40sXjA?si=WXCLuCdWrKBTJmty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div> 
+
+         <div class="main-body-card-two">
+          <div class="main-body-card-two-top"><p><%= data.tasks[0].assets[1].asset_title%></p><span class="material-symbols-outlined"> info</span></div>
+          <div class="main-body-card-two-middle">
+            <p>
+              <b>Description:</b> <%=data.tasks[0].assets[1].asset_description  %>
+            </p>
+          </div>
+          <div class="main-body-card-two-bottom card-two-bottom">
+            <div class="card-two-bottom-top">
+              <div>
+                <span class="material-symbols-outlined"> expand_less </span>
+              </div>
+              <div><p>Thread A</p></div>
+            </div>
+            <div class="card-two-bottom-middle">
+              <div class="card-two-bottom-middle-div">
+                <div>Sub thread 1</div>
+                <textarea
+                  type="text"
+                  placeholder="Enter Text Here"
+                ></textarea>
+              </div>
+              <div class="card-two-bottom-middle-div">
+                <div>Sub Interpretation 1</div>
+                <textarea
+                  type="text"
+                  type="textarea"
+                  placeholder="Enter Text Here"
+                ></textarea>
+              </div>
+            </div>
+            <div class="card-two-bottom-bottom">
+              <button>+ Sub-Thread</button>
+              <div>
+                <h2>Summary for the thread A</h2>
+
+              <textarea
+                rows="3"
+                cols="20"
+                placeholder="Enter Ther Hear"
+              ></textarea></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-body-card-three">
+          <div class="main-body-card-three-top">
+            <p><%= data.tasks[0].assets[2].asset_title%></p>
+            <span class="material-symbols-outlined"> info</span>
+          </div>
+          <div class="main-body-card-three-middle">
+            <p>
+              <b>Description :</b>  <%=data.tasks[0].assets[2].asset_description  %>
+            </p>
+          </div>
+
+          <div class="main-body-card-three-bottom card-three-bottom">
+            <div class="card-three-bottom-top">
+              <div>
+                <label for="">Title</label>
+              </div>
+
+              <input type="text"  />
+            </div>
+            <div class="content">
+              <h3>Content</h3>
+            </div>  
+            
+            <div class="card-three-bottom-bottom">
+              
+
+              <label for="">File  Edit View Insert Format Tools Table Help</label>
+              <div class="card-three-bottom-bottom-span">
+                <span class="material-symbols-outlined"> reply </span>
+                <span class="material-symbols-outlined"> forward </span>
+                <span class="material-symbols-outlined"> zoom_out_map </span>
+                <span>Paragraph</span>
+                <span class="material-symbols-outlined"> more_horiz </span>
+              </div>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-body-card-four">
+          <div class="main-body-card-four-top"><p><%= data.tasks[0].assets[3].asset_title%></p><span class="material-symbols-outlined"> info</span></div>
+          <div class="main-body-card-four-middle">
+            <p><b>Description :</b>   <%=data.tasks[0].assets[3].asset_description  %></p>
+          </div>
+          <div class="main-body-card-four-bottom card-four-bottom">
+            <div class="card-four-bottom-top">
+              <div class="card-four-bottom-top-bottom">
+                <div>
+                  <span class="material-symbols-outlined"> expand_less </span>
+                </div>
+                <div><h4>Introduction</h4></div>
+              </div>
+
+              <div>
+                <p>The 4SA Method , How to bring a idea into progress ?</p>
+              </div>
+              <p class="card-four-bottom-top-bottom-see-more">See More</p>
+            </div>
+            <div class="card-four-bottom-bottom">
+              <div class="card-four-bottom-top-bottom">
+                <div>
+                  <span class="material-symbols-outlined"> expand_less </span>
+                </div>
+                <div><h4>Thread A</h4></div>
+              </div>
+
+              <div>
+                <p>
+                  How are you going to develop your stratergy ? Which method
+                  are you going to use to develop a stratergy ? What if the
+                  project is lengthy?
+                </p>
+                <p class="card-four-bottom-top-bottom-see-more">See More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </main>
+
+  <footer>
+    <img src="img/que1.png">
+    <img src="img/que2.png">
+    <img src="img/que3.png">
+  </footer>
+
+  <script> 
+        document.getElementById('a_btn').addEventListener('click', function() {
+    var slider = document.getElementById('header_slider');
+    var head_h2 = document.getElementById('head_h2')
+    var main_side = document.getElementById('main-side')
+
+
+         slider.classList.toggle('expanded');
+     
+    
+    
+    var arrow = document.getElementById('arrow');
+    if (slider.classList.contains('expanded')) {
+        arrow.innerText = 'arrow_back';
+        slider.style.width="392px";
+        setTimeout(()=>{
+            head_h2.style.display="flex";
+        },200)
+        main_side.style.display="none";
+    } else {
+        arrow.innerText = 'arrow_forward';
+        slider.style.width="140px";
+        head_h2.style.display="none";
+        main_side.style.display="flex";
+      
+    }
+});
+
+  </script>
+</body>
+</html>
