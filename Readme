@@ -1,0 +1,5 @@
+Hi everyone myself Shravan Padale.
+This project includes both task 1 and task 2 given by DeepThought EduTech Venture.
+To run the project check you have respective node modules installed 
+index.js file includes code of server made with express js 
+node index.js to run project and enter localhost:3000 on your browser.
